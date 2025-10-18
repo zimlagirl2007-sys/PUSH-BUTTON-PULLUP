@@ -1,0 +1,34 @@
+// This program will read the state of the pushbutton and display it on the serial monitor 
+// This is a Digital Input program 
+
+void setup() { 
+
+  // initialize serial communication at 9600 bits per second: 
+
+  Serial.begin(9600); 
+
+  // make the pushbutton's pin an input: 
+
+  pinMode(pushButton, INPUT_PULLUP);// sets the pushbutton pin as an internal pull-up resistor 
+
+ 
+
+} 
+
+ 
+
+// the loop routine runs over and over again forever: 
+
+void loop() { 
+
+  // read the input pin: 
+
+  int buttonState = digitalRead(pushButton); 
+
+  // print out the state of the button: 
+
+ Serial.print("buttonState = "); 
+
+  Serial.println(buttonState); 
+
+  delay(1);  // delay in between reads for stability 
