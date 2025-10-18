@@ -1,4 +1,4 @@
-int pushButton = 13 // This defines the pushbutton as pin 13 
+int pushButton = 13; // This defines the pushbutton as pin 13 
 // This program will read the state of the pushbutton and display it on the serial monitor 
 // This is a Digital Input program 
 
